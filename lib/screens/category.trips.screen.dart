@@ -21,7 +21,7 @@ class CategoryTripsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(categoryTitle ?? 'Default Title',
-            style: Theme.of(context).textTheme.headlineMedium),
+            style: Theme.of(context).textTheme.headlineLarge),
         backgroundColor: Theme.of(context).primaryColor,
       ),
       body: ListView.builder(

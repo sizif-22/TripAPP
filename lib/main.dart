@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             headlineMedium: const TextStyle(
               fontSize: 24,
               fontFamily: 'ElMessiri',
-              color: Colors.white,
+              color: Colors.blue,
               fontWeight: FontWeight.bold,
             ),
             headlineLarge: const TextStyle(
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (ctx) => const CategoriesScreen(),
         CategoryTripsScreen.tripsRoute: (ctx) => CategoryTripsScreen(),
-        TripDetailsScreen.tripDetailsScreenRoute:(ctx)=>TripDetailsScreen(),
+        TripDetailsScreen.tripDetailsScreenRoute: (ctx) => TripDetailsScreen(),
       },
     );
   }
