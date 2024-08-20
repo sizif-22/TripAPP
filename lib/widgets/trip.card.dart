@@ -3,7 +3,6 @@ import 'package:proj6/screens/trip.screen.dart';
 import '../models/trip.dart';
 
 class TripItem extends StatelessWidget {
-
   String get seasonText {
     switch (season) {
       case Season.Winter:
@@ -72,11 +71,11 @@ class TripItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void selectTrip() {
-      Navigator.of(context).pushNamed(
-        TripDetailsScreen.tripDetailsScreenRoute,
-        arguments: 
-       {'id': id,}
-      );
+      Navigator.of(context)
+          .pushNamed(TripDetailsScreen.tripDetailsScreenRoute, arguments: {
+        'id': id,
+        // 'imageUrl': imageUrl,
+      });
     }
 
     return InkWell(
